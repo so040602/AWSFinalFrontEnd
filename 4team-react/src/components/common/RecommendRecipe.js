@@ -1,10 +1,12 @@
 import { Button } from "react-bootstrap";
 import "../../pages/MyRefriUi.css"
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 function RecommendRecipe(props) {
     const recommedList = props.recommedRecipes;
     console.log(props.recommedRecipes);
+    const navigate = useNavigate();
 
     const [visibleCount, setVisibleCount] = useState(3);
 
