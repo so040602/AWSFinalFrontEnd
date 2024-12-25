@@ -142,7 +142,7 @@ function RecipeList() {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  image={recipe.recipeThumbnail ? `http://13.209.126.207:8989${recipe.recipeThumbnail}` : '/default-recipe.jpg'}
+                  image={recipe.recipeThumbnail ? `${recipe.recipeThumbnail}` : '/default-recipe.jpg'}
                   alt={recipe.recipeTitle}
                 />
                 <CardContent>
